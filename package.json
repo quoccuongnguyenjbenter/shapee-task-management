@@ -1,0 +1,26 @@
+{
+  "name": "shapee-task-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://NhatThao@bitbucket.org/nngoc2409/shapee-task-management.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/nngoc2409/shapee-task-management#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.7",
+    "node-datetime": "^2.1.2",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4"
+  }
+}

@@ -1,0 +1,32 @@
+html(lang='en')
+    head
+            link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+            link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css', rel='stylesheet')
+    body
+            .container
+                h1(align="center") View Task
+                .row.mb-3
+                    .col-4
+                        ul.list-group
+                            li.list-group-item
+                                strong Task's Name:
+                                span.ml-3= project.name
+                            li.list-group-item 
+                                strong Start Date:
+                                span.ml-3= project.startDate.toDateString()   
+                            li.list-group-item
+                                strong End Date:
+                                span.ml-3= project.endDate.toDateString()
+                            li.list-group-item
+                                strong Content:
+                                span.ml-3= project.status
+                            li.list-group-item
+                                strong Create Date:
+                                span.ml-3= project.creatDate
+                    .col-8
+                        ul.list-group
+                            li.list-group-item
+                                    strong Task:
+                                    span.ml-3= project.taskId
+                .row
+                    a.btn.btn-primary(href='/projects/') Back              
